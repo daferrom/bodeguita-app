@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import Card from '../Card/Card'
 
 const ProductsView = () => {
     return (
@@ -8,6 +9,7 @@ const ProductsView = () => {
             <h1 className="titleMessage">
                 Hola Lalo Landa, elige uno de nuestros combos.
             </h1>
+            <Card />
             
         </div>
     )
