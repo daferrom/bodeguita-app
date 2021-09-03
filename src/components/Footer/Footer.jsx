@@ -4,7 +4,7 @@ import style from './Footer.css'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className = "footer">
             
             <hr className="footerLine"></hr>
             <img id="logoDiegoDev" src={LogoDev} alt="Logo developer Diego Ferro"></img>
