@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoDev from '../../Assets/logos/Logodev.png'
+import style from './Footer.css'
 
 const Footer = () => {
     return (

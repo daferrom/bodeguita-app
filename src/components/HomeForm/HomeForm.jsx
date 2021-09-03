@@ -1,8 +1,9 @@
 import React from 'react'
+import style from './HomeForm.css'
 
 const HomeForm = () => {
     return (
-        <div className ="">
+        <div className ="homeFormContainer">
             <h2 className="inputTitle">Ingresa tu nombre</h2>
             <input className="input" type="text"></input>
             <h2 className="inputTitle">Ingresa tu dirección</h2>
