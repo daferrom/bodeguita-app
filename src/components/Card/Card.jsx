@@ -3,7 +3,9 @@ import React from 'react'
 const Card = () => {
     return (
         <div>
-            <h3 className="productTitle">Combo pa' desayunar</h3>
+            <h3 className="productTitle">
+                Combo pa' desayunar
+            </h3>
             <img src="#" alt="Imagen del producto"></img>
             <h3 className="priceProduct">32.800</h3>
             <h4 className="includedArtTitle">Articulos incluidos</h4>

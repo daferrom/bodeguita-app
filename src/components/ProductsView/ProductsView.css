@@ -1,0 +1,12 @@
+.containerProductsView{
+    margin: 0px;
+}
+.titleMessage{
+    font-size: 18px;
+    line-height: 21px;
+    align-items: flex-start;
+    margin: 25px;
+    color: #007C66;
+
+
+}
