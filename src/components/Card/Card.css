@@ -4,16 +4,31 @@
 
 }
 
-.cardContainer{
+.cardContainer {
     display:flex;
     flex-direction: column;
     align-items: center;
     background: var(--background-card);
 }
-.productTitle{
+.productTitle {
     font-size: 24px;
     margin-top: 12px;
     margin-bottom: 24px;
     font-weight: bold;
     color: var(--green-bodeguita);
+}
+.priceProduct {
+    color: var(--green-bodeguita);
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.includedArticlesTitle {
+    color: var(--green-bodeguita);
+    margin-bottom: 15px;
+}
+.articles{
+    padding: 0px 35px;
+    margin-bottom: 15px;
+
 }
