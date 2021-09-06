@@ -3,20 +3,21 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 import HomeView from './components/HomeView/HomeView'
 import ProductsView from './components/ProductsView/ProductsView';
 import Footer from "./components/Footer/Footer"
 import Cart from './components/Cart/Cart'
+import './App.css'
 
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className='container'>
         <div className="btn-group">
             <Switch>
-              <Route path = "/" exact>
+              <Route path = "/inicio" exact>
                 <HomeView />
               </Route>
               <Route path = "/productos">
@@ -26,8 +27,6 @@ function App() {
                 <Cart />
               </Route>
             </Switch>
-          {/*<HomeView/>        
-          <ProductsView />*/}
           <Footer/>
         </div>
       </div>

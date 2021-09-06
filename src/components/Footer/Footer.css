@@ -1,9 +1,16 @@
 footer{
-    display:flex;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
+    justify-content: center;
+}
+
+#logoDiegoDev {
+    height: 54px;
+    width: 32px
 }
