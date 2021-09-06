@@ -6,7 +6,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    
+    Link,  
   } from "react-router-dom";
 
 
@@ -17,15 +17,12 @@ const HomeView = () => {
            <LogoHome />
             <h1 id="Saludo">Hola Veci!</h1>
            <HomeForm />
-           <Router>
-                <Switch>
-                    <Route path = "/productos">
-                    <button>Ingresar</button>
-                    </Route>
-                </Switch>  
-            </Router>
-           <button>Ingresar</button>
+           <Link to = "/productos" className="btn" >
+               Ingresar
+           </Link>
 
+           
+           
         </div>
     )
 }
