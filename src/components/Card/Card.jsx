@@ -1,8 +1,9 @@
 import React from 'react'
+import './Card.css'
 
 const Card = () => {
     return (
-        <div>
+        <div className ="cardContainer">
             <h3 className="productTitle">
                 Combo pa' desayunar
             </h3>
