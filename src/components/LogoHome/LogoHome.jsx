@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../../Assets/logos/LogoLaBodeguita.png'
-import style from './LogoHome.css'
+import './LogoHome.css'
 
 const LogoHome = () => {
     return (

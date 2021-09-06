@@ -1,0 +1,12 @@
+.navigationBar {
+    }
+
+.navigationBar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #019656;
+    height: 72px;
+    text-decoration: none;
+}
