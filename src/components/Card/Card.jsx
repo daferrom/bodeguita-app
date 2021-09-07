@@ -1,6 +1,7 @@
 import React from 'react'
 import './Card.css'
 //import comboDesayuno from '../../Assets/Imgs/comboDesayuno.png'//
+import images from '../../Assets/images'
 const imgProduct =  '../../Assets/Imgs/comboDesayuno.png'
 
 const Card = () => {
@@ -10,7 +11,7 @@ const Card = () => {
                 Combo pa' desayunar
             </h3>
             <img 
-                src = {imgProduct}
+                src = {images.img1}
                 alt="Imagen del producto"
                 />
             <h3 
