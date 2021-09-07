@@ -1,6 +1,7 @@
 import React from 'react'
 import './Card.css'
-import comboDesayuno from '../../Assets/Imgs/comboDesayuno.png'
+//import comboDesayuno from '../../Assets/Imgs/comboDesayuno.png'//
+const imgProduct =  '../../Assets/Imgs/comboDesayuno.png'
 
 const Card = () => {
     return (
@@ -9,7 +10,7 @@ const Card = () => {
                 Combo pa' desayunar
             </h3>
             <img 
-                src = {comboDesayuno}
+                src = {imgProduct}
                 alt="Imagen del producto"
                 />
             <h3 
@@ -20,13 +21,14 @@ const Card = () => {
                 className="includedArticlesTitle">
                     Articulos incluidos
             </h4>
-            <p className="articles">
-            1 paquete de Tostadas Bimbo, <br></br>
-            1 cesta de huevos, <br></br>
-            1 Unidad Avena molida, <br></br>
-            1 Pan Bimbo, <br></br> 
-            1 libra de café pitayó. <br></br>
-            1 Libra de Chocolate. <br></br>
+            <p 
+                className="articles">
+                    1 paquete de Tostadas Bimbo, <br></br>
+                    1 cesta de huevos, <br></br>
+                    1 Unidad Avena molida, <br></br>
+                    1 Pan Bimbo, <br></br> 
+                    1 libra de café pitayó. <br></br>
+                    1 Libra de Chocolate. <br></br>
             </p>
             <button className="btn">Añadir al carrito</button>
         </div>
