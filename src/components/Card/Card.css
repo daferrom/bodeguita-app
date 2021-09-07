@@ -20,6 +20,10 @@
     font-weight: bold;
     color: var(--green-bodeguita);
 }
+.productImage{
+    height: 250px;
+    width: 250px;
+}
 .priceProduct {
     color: var(--green-bodeguita);
     font-size: 24px;

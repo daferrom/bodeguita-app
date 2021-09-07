@@ -1,8 +1,8 @@
 import React from 'react'
 import './Card.css'
-//import comboDesayuno from '../../Assets/Imgs/comboDesayuno.png'//
-import images from '../../Assets/images'
-const imgProduct =  '../../Assets/Imgs/comboDesayuno.png'
+import imageList from '../../Assets/images'
+import imagesList from '../../Assets/images'
+
 
 const Card = () => {
     return (
@@ -11,7 +11,8 @@ const Card = () => {
                 Combo pa' desayunar
             </h3>
             <img 
-                src = {images.img1}
+                className = "productImage"
+                src = {imagesList.[0].img}
                 alt="Imagen del producto"
                 />
             <h3 
