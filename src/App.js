@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,  
 } from "react-router-dom";
 import HomeView from './components/HomeView/HomeView'
 import ProductsView from './components/ProductsView/ProductsView';
@@ -15,11 +14,6 @@ function App() {
   return (
     <Router>
       <div className='container'>
-        <div className="btn-group">
-          <Link to= "/inicio" className="btn btn-dark">
-            Inicio 
-          </Link>
-        </div> 
             <Switch>
               <Route path = "/inicio" exact>
                 <HomeView />
