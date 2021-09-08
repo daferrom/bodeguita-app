@@ -1,6 +1,5 @@
 import React from 'react'
 import './Card.css'
-import imagesList from '../../Assets/images'
 import {
     Link,  
   } from "react-router-dom";
