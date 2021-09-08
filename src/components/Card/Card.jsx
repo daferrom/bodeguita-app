@@ -1,22 +1,24 @@
 import React from 'react'
 import './Card.css'
 import imagesList from '../../Assets/images'
+import {
+    Link,  
+  } from "react-router-dom";
 
-
-const Card = ({comboDes}) => {
+const Card = ({comboProps}) => {
     return (
         <div className ="cardContainer">
             <h3 className="productTitle">
-                {comboDes.title}
+                {comboProps.title}
             </h3>
             <img 
                 className = "productImage"
-                src = {imagesList.[0].img}
+                src = {comboProps.imageUrl}
                 alt="Imagen del producto"
                 />
             <h3 
                 className="priceProduct">
-                    {comboDes.price}
+                    {comboProps.price}
             </h3>
             <h4 
                 className="includedArticlesTitle">
@@ -24,9 +26,10 @@ const Card = ({comboDes}) => {
             </h4>
             <p 
                 className="articles">
-                    {comboDes.description}
+                    {comboProps.description}
             </p>
             <button className="btn">Añadir al carrito</button>
+            <button className="btn"><Link to= "/carrito">Ir al carrito</Link></button>
         </div>
     )
 }

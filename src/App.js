@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className='container'>
             <Switch>
-              <Route path = "/inicio" exact>
+              <Route path = "/" exact>
                 <HomeView />
               </Route>
               <Route path = "/productos">
