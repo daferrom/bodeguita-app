@@ -10,7 +10,11 @@ const Cart = () => {
             <h1 className ="titleMessage">
               Lalo Landa tienes estos combos<br></br>
               en tu carrito 
-            </h1>  
+            </h1>
+            <h3>Productos</h3>  
+            <article className ="Box"></article>
+            <h3>Productos</h3>  
+            <article className ="Box"></article>
           <Contador />
         </div>
     )

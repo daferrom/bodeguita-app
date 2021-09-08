@@ -5,8 +5,6 @@ import Combos from '../../database/list.json'
 
 
 function Cards({props}) {
-    console.log(Combos)
-    console.log(Combos[0])
 
  
     return (
