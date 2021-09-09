@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
-
 import Cards from '../Cards/Cards'
 
 const ProductsView = () => {
