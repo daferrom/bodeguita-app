@@ -10,6 +10,7 @@ export const shooppingInitialState = {
         {id: 1, name:"Producto5",price:500},
         {id: 1, name:"Producto6",price:600},
     ],
+    cart:[],
 }
 
 export function shoppingReducer(state,action){
@@ -22,8 +23,8 @@ export function shoppingReducer(state,action){
         }
         case TYPES.CLEAR_CART:{
         }
-    default:
+        default:
         return state;
-}
+    }
 }
 
