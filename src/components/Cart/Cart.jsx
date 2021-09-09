@@ -24,8 +24,9 @@ const Cart = () => {
   const delFromCart = () => {}
 
   const clearCart = () => {}
-
-  return (
+    dispatch({type:TYPES.CLEAR_CART});  
+  
+    return (
         <div>
           <NavBar />
             <h1 className ="titleMessage">
