@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import ShoppingCart from '../ShoppingCart/ShoppingCart'
 //import Cards from '../Cards/Cards'
 
 const ProductsView = () => {
@@ -10,9 +11,10 @@ const ProductsView = () => {
                 Hola Lalo Landa, elige uno de nuestros combos.
             </h1>
             <h3>Productos</h3>
+            <ShoppingCart/>
             <article className="productsContainer"></article>
             
-            
+                        
         </div>
     )
 }

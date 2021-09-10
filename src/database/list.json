@@ -1,27 +1,27 @@
 [
     {
-        "title": "Combo pa' desayunar",
+        "name": "Combo pa' desayunar",
         "price": "32.800",
         "description": " 1 Un Tostadas Bimbo, 1 Cesta de huevos(30 unidades), 1 Paquete de Avena molida de 220grs, 1 Pan Bimbo, 1 Libra de café pitayó. 1 Libra de Chocolate.",
         "imageUrl": "https://i.ibb.co/N3VcPQ6/combo-Desayuno.png",
         "id":1
     },
     {
-        "title": "Combo Enlatados",
+        "name": "Combo Enlatados",
         "description": " 1 lata de Sardinas, 1 lata de Atún, 1 Lata de Salchicha Viena Zenú, 1 Lata de Maiz Dulce Zenú, 1 Lata de Arvejas Zenú, 1 Lata de Arvejas Zenú. ",
         "price": "19.300",
         "imageUrl":"https://i.ibb.co/qxDFLRc/combo-Enlatados.png",
         "id":2
     },
     {
-        "title": "Combo para el almuerzo",
+        "name": "Combo para el almuerzo",
         "description": "1 Libra de arroz Florhuila, 1 Libra de lentejas SuDespensa, 1 Libra de Arvejas SuDespensa, 1 Libra de frijol SuDespensa ",
-        "price": "$15.700",
+        "price": "15.700",
         "imageUrl":"https://i.ibb.co/8dX59Y8/combo-Almuerzo.png",
         "id":3
     },
     {
-        "title": "Combo ancheta Dulcera",
+        "name": "Combo ancheta Dulcera",
         "description": "1 chocolatina Jumbo Jet, 1 Chocorramo, 1 paquete de gomitas trululú fresitas, 1 Nutella 100grs, 1 Galleta Italo Wafers",
         "price": "18.700",
         "imageUrl":"https://i.ibb.co/rt623Mt/combo-Ancheta-Dulcera.png",
@@ -35,21 +35,21 @@
         "id":5
     },
     {
-        "title": "Combo Rumba",
+        "name": "Combo Rumba",
         "description": " 1 botella Aguardiente, DobleAnis 500ml, 1 libra de Limón, 1 De Todito Paquetón 105gr, 1 De Todito BBQ Paquetón 105grs",
         "price": "48.000",
         "imageUrl":"https://i.ibb.co/zNr0QtY/combo-Rumba.png",
         "id":6
     },
     {
-        "title": "Combo Sancochero",
+        "name": "Combo Sancochero",
         "description": "1 pollo entero, 1 lb Platano verde, 1 lb Papa negra, 1 lb Papa criolla, 1 lb de Yuca, 1 lb cebolla larga, 1 lb de tomate, 1 Auyama , 1 rama de cilantro",
         "price": "32.800",
         "imageUrl":"https://i.ibb.co/7NSc7zR/combo-Sancocho.png",
         "id":7
     },
     {
-        "title": "Combo para Jugos",
+        "name": "Combo para Jugos",
         "description": "1 pollo entero, 1 lb Platano verde, 1 lb Papa negra, 1 lb Papa criolla, 1 lb de Yuca, 1 lb cebolla larga, 1 lb de tomate, 1 Auyama , 1 rama de cilantro",
         "price": "6.000",
         "imageUrl":"https://i.ibb.co/W0ftZ3X/combo-Jugos.png",
@@ -63,7 +63,7 @@
         "id":9
     },
     {
-        "title": "Combo Aseo personal",
+        "name": "Combo Aseo personal",
         "description": " 1 Crema de dientes Colgate, 1 Jabón protex, 1 cepillo de dientes, 1 Shampoo Savital",
         "price": "19.000",
         "imageUrl":"https://i.ibb.co/Tb98WVH/combo-Aseo-Personal.png",

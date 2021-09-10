@@ -4,28 +4,29 @@ import {
     Link,  
   } from "react-router-dom";
 
-const Card = ({comboProps}) => {
+const Card = ({data,addToCart}) => {
+    let {id, name, price, description, imageUrl} = data;  
     return (
         <div className ="cardContainer">
             <h3 className="productTitle">
-                {comboProps.title}
+                {name}
             </h3>
             <img 
                 className = "productImage"
-                src = {comboProps.imageUrl}
+                src = {imageUrl}
                 alt="Imagen del producto"
                 />
             <h3 
                 className="priceProduct">
-                    {comboProps.price}
+                    ${price}
             </h3>
             <h4 
                 className="includedArticlesTitle">
-                    Articulos incluidos
+                Articulos incluidos
             </h4>
             <p 
                 className="articles">
-                    {comboProps.description}
+                {description}
             </p>
             <button className="btn">Añadir al carrito</button>
             <button className="btn"><Link to= "/carrito">Ir al carrito</Link></button>
