@@ -28,7 +28,7 @@ const Card = ({data,addToCart}) => {
                 className="articles">
                 {description}
             </p>
-            <button className="btn">Añadir al carrito</button>
+            <button className="btn" onClick={()=>addToCart(id)}>Añadir al carrito</button>
             <button className="btn"><Link to= "/carrito">Ir al carrito</Link></button>
         </div>
     )

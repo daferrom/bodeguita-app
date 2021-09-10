@@ -10,10 +10,16 @@ import Footer from "./components/Footer/Footer"
 import Cart from './components/Cart/Cart'
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import './App.css'
+import { Context } from './context/context';
+import { shoppingInitialState } from './components/ShoppingCart/ShoppingCartReducers';
 
 function App() {
+  let dataContext ={
+    shoppingInitialState
+  }
   return (
-    <Router>
+    <Context.Provider value={dataContext}>
+      <Router>
       <div className='container'>
             <Switch>
               <Route path = "/" exact>
@@ -32,6 +38,8 @@ function App() {
           <Footer/>
       </div>
     </Router> 
+    </Context.Provider>
+    
   );
 }
 

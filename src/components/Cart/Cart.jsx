@@ -1,19 +1,23 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {useReducer} from "react";
 import { 
-  shoppingInitialState,
+  //shoppingInitialState,
   shoppingReducer,
 } from './ShoppingReducers.js'
+
 //import Contador from '../Contador/Contador.js'//
 import NavBar from '../NavBar/NavBar'
 import './Cart.css'
 import ProductItem from './ProductItem.js'
 import CartItem from './CartItem.js';
 import { TYPES } from './ShoppingAction.js';
+import { Context } from '../../context/context.js';
+
 
 const Cart = () => {
+  const {shoppingInitialState}= useContext(Context)
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-
+  console.log(shoppingInitialState)
   const {products, cart} = state;
 
   const addToCart = (id) => {
@@ -32,7 +36,9 @@ const Cart = () => {
 
   const clearCart = () => {
     dispatch({type:TYPES.CLEAR_CART});  
+  
   };
+  
 
     return (
         <div>
