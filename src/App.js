@@ -8,6 +8,7 @@ import HomeView from './components/HomeView/HomeView'
 import ProductsView from './components/ProductsView/ProductsView';
 import Footer from "./components/Footer/Footer"
 import Cart from './components/Cart/Cart'
+import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import './App.css'
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
               </Route>
               <Route path = "/carrito">
                 <Cart />
+              </Route>
+              <Route path = "/cart">
+                <ShoppingCart />
               </Route>
             </Switch>
           <Footer/>

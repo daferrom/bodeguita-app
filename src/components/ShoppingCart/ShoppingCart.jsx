@@ -5,6 +5,7 @@ import { shoppingCartReducer, shoppingInitialState } from './ShoppingCartReducer
 
 const ShoppingCart = () => {
     const [state, dispatch] = useReducer(shoppingCartReducer, shoppingInitialState)
+    const {product, cart}=state
     return (
         <div>
             <NavBar/>

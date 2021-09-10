@@ -1,5 +1,5 @@
 import React from 'react'
-
+// OJO ESTE PRODUCT ITEM VIENE A SER MI CARD 
 //data receive all the parameters (an object) with the attributtes //
 const ProductItem = ({data, addToCart}) => {
     let {id, name, price} = data;
