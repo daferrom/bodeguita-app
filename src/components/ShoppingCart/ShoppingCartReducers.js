@@ -1,4 +1,5 @@
 import products from '../../database/list.json'
+import Cart from '../Cart/Cart';
 import { TYPES } from '../ShoppingCart/ShoppingActions';
 
 
@@ -26,4 +27,5 @@ export function shoppingCartReducer(state,action){
         return state
     }
 };
-
+export var CartCurrentState  
+//// se supone 

@@ -12,7 +12,6 @@ const ShoppingCart = () => {
     const { products, cart} = state
     //the const addToCart save the function to add a product to the cart//
     const addToCart = (id) => {
-        console.log(id);
         dispatch({type:TYPES.ADD_TO_CART, payload:id})
     }
     //the const addToCart save the function to del one product or all of these from the cart//
@@ -33,7 +32,7 @@ const ShoppingCart = () => {
             <article className="itemInCart">
             <button onClick ={clearCart}>Limpiar Carrito</button>
             {
-                cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart}/>)
+                cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} imageUrl={item}/>)
             }
             </article> 
         </div>

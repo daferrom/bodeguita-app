@@ -1,0 +1,27 @@
+:root{
+    --background-card: linear-gradient(180deg, rgba(196, 196, 196, 0) 53.18%, rgba(196, 196, 196, 0.24) 100%); ;
+    --green-bodeguita: #007C66;
+
+}.titleItem{
+font-family: "Work Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+color: var(--green-bodeguita)
+}
+.cartItemContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage{
+    width: 109px;
+    height: 109px;
+}
+.imgAndPrice{
+    display:flex;
+    align-items: center;
+}

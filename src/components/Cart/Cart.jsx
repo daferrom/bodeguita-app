@@ -8,7 +8,7 @@ import {
 //import Contador from '../Contador/Contador.js'//
 import NavBar from '../NavBar/NavBar'
 import './Cart.css'
-import ProductItem from './ProductItem.js'
+import { shoppingCartReducer } from '../ShoppingCart/ShoppingCartReducers.js';
 import CartItem from './CartItem.js';
 import { TYPES } from './ShoppingAction.js';
 import { Context } from '../../context/context.js';
@@ -17,15 +17,12 @@ import ShowState from '../showState/ShowState.js';
 
 const Cart = () => {
   const {shoppingInitialState}= useContext(Context)
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-  console.log(shoppingInitialState)
-  const {products, cart} = state;
-
-  const addToCart = (id) => {
-    //console.log(id)
-    dispatch({type:TYPES.ADD_TO_CART, payload: id})
-  }
   
+  const [state, dispatch] = useReducer(shoppingInitialState, shoppingCartReducer,);
+  
+  const {products, cart} = shoppingInitialState;
+
+ 
   const delFromCart = (id, all=false) => {
     console.log(id, all);
     if(all){
@@ -49,18 +46,14 @@ const Cart = () => {
               tienes estos combos<br></br>
               en tu carrito 
             </h1>
-            <h3>Productos</h3>  
-            <article className ="box grid-responsive">
-              {products.map((product) => (
-              <ProductItem key={product.id} data={product} addToCart={addToCart}/>
-              ))}
-            </article>
+                      
             <h3>Productos en el carrito</h3>  
             <article className ="box">
             <button onClick={clearCart}>Limpiar carrito</button>
             {cart.map((item,index) => (
             <CartItem key={index} data={item} delFromCart={delFromCart}/>
             ))}
+            
             </article>
         </div>
     )
