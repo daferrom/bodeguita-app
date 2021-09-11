@@ -12,6 +12,7 @@ import ProductItem from './ProductItem.js'
 import CartItem from './CartItem.js';
 import { TYPES } from './ShoppingAction.js';
 import { Context } from '../../context/context.js';
+import ShowState from '../showState/ShowState.js';
 
 
 const Cart = () => {
@@ -44,7 +45,8 @@ const Cart = () => {
         <div>
           <NavBar />
             <h1 className ="titleMessage">
-              Lalo Landa tienes estos combos<br></br>
+              <ShowState />
+              tienes estos combos<br></br>
               en tu carrito 
             </h1>
             <h3>Productos</h3>  

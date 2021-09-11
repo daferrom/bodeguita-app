@@ -12,18 +12,21 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import './App.css'
 import { Context } from './context/context';
 import { shoppingInitialState } from './components/ShoppingCart/ShoppingCartReducers';
+import MyProvider from './components/application/provider';
+
 
 function App() {
   let dataContext ={
     shoppingInitialState
   }
   return (
+    <MyProvider>
     <Context.Provider value={dataContext}>
       <Router>
       <div className='container'>
             <Switch>
               <Route path = "/" exact>
-                <HomeView />
+                <HomeView />           
               </Route>
               <Route path = "/productos">
                 <ProductsView />
@@ -39,7 +42,7 @@ function App() {
       </div>
     </Router> 
     </Context.Provider>
-    
+    </MyProvider>
   );
 }
 

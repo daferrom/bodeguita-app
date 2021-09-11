@@ -1,9 +1,10 @@
 import React from 'react'
 import { useReducer } from 'react'
 import Card from '../Card/Card'
-import NavBar from '../NavBar/NavBar'
+import CartItem from '../CartItem/CartItem'
 import { shoppingCartReducer, shoppingInitialState } from './ShoppingCartReducers.js'
 import './ShoppingCart.css'
+import { TYPES } from './ShoppingActions'
 
 const ShoppingCart = () => {
     const [state, dispatch] = useReducer(shoppingCartReducer, shoppingInitialState);
@@ -11,10 +12,11 @@ const ShoppingCart = () => {
     const { products, cart} = state
     //the const addToCart save the function to add a product to the cart//
     const addToCart = (id) => {
-        console.log(id)
+        console.log(id);
+        dispatch({type:TYPES.ADD_TO_CART, payload:id})
     }
     //the const addToCart save the function to del one product or all of these from the cart//
-    const delToCart = () => {}
+    const delFromCart = () => {}
 
     const clearCart = () => {}
 
@@ -27,6 +29,13 @@ const ShoppingCart = () => {
                 <Card key={product.id} data={product} addToCart={addToCart}/>
                 )}
             </article>
+            <h3>Carrito</h3>
+            <article className="itemInCart">
+            <button onClick ={clearCart}>Limpiar Carrito</button>
+            {
+                cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart}/>)
+            }
+            </article> 
         </div>
     )
 }
