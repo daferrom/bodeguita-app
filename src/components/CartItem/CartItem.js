@@ -3,6 +3,7 @@ import './CartItem.css'
 
 const CartItem = ({data, delFromCart}) => {
     let {id, name, price, imageUrl, quantity} = data;
+    const totalProduct = price * quantity
 
     return (
         <div className= "cartItemContainer">
@@ -13,7 +14,7 @@ const CartItem = ({data, delFromCart}) => {
                 src = {imageUrl}
                 alt="Imagen del producto"
             />
-            <h5 className="priceTitle">${price} x {quantity} Un. = ${price * quantity}</h5>
+            <h5 className="priceTitle">${price} x {quantity} Un. = ${totalProduct}</h5>
             </div>
             <div>
             <button onClick={()=> delFromCart(id)}>Eliminar uno</button>    

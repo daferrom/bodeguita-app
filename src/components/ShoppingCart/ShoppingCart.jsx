@@ -29,13 +29,13 @@ const ShoppingCart = () => {
     const clearCart = () => {
         dispatch({type:TYPES.CLEAR_CART})
     }
-    const pricesInCart = () => {
-        dispatch({type:TYPES.TOTAL_AMOUNT})
+    const pricesInCart = (id) => {
+        dispatch({type:TYPES.TOTAL_AMOUNT, payload:id})
     }
    
 
-    const cartPrices = cart
-    console.log = cartPrices
+
+   
     return (
         <div>
             <h3>Productos</h3>
@@ -52,9 +52,11 @@ const ShoppingCart = () => {
                 cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} />)
             }
             <h3>
+                
+                
                 TOTAL $ 
                 {
-                cart.map(( artInCart , indexA) => <TotalSum key= {indexA} dataPrices={artInCart}  />)
+                    cart.map(( artInCart , indexA) => <TotalSum key= {indexA} dataPrices={artInCart}  />)
                 }           
             </h3>
             </article> 
