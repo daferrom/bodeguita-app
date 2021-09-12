@@ -5,7 +5,7 @@ import Login from '../Login/Login.js'
 const HomeForm = () => {
     return (
         <div className ="homeFormContainer">
-            <Login />        
+            <Login/>        
         </div>
     )
 }
