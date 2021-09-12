@@ -22,7 +22,7 @@ function App() {
   return (
     <MyProvider>
     <Context.Provider value={dataContext}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <div className='container'>
             <Switch>
               <Route path = "/" exact>
