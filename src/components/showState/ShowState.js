@@ -5,8 +5,10 @@ const ShowState = () => {
   const [state, setState] = useContext(AppContext);
   return ( 
       <div>
-         <p>{state.name}</p>
-         <p>{state.adress}</p> 
+         <p>Hola &nbsp;{state.name}&nbsp;</p>
+         <p>elige lo que necesites entre nuestros combos y lo enviaremos a tu 
+         direccion: {state.adress}
+        </p> 
   </div>
   );
 }

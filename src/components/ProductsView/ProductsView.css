@@ -1,10 +1,14 @@
 .containerProductsView{
     margin: 0px;
+    display: flex;
+    align-items: center;
 }
 .titleMessage{
+    
+    word-spacing:10%;
     font-size: 18px;
     line-height: 21px;
-    align-items: flex-start;
+    align-items: center;
     margin: 25px;
     color: #007C66;
 }

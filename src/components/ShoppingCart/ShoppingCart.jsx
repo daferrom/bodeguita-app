@@ -7,6 +7,7 @@ import './ShoppingCart.css'
 import { TYPES } from './ShoppingActions'
 import NavBar from '../NavBar/NavBar'
 import TotalSum from '../TotalSum/TotalSum'
+import ShowState from '../showState/ShowState'
 
 const ShoppingCart = () => {
     const [state, dispatch] = useReducer(shoppingCartReducer, shoppingInitialState);
@@ -38,7 +39,10 @@ const ShoppingCart = () => {
    
     return (
         <div>
-            <h3>Productos</h3>
+            <h3 className="productsTitle">Nuestros Productos</h3>
+            <h4 className="titleMessage">
+                <ShowState /> 
+            </h4>
             <article className="grid-responsive">
                 {products.map((product) => 
                 <Card key={product.id} data={product} addToCart={addToCart}/>
