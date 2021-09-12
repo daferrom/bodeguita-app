@@ -29,7 +29,7 @@ const ShoppingCart = () => {
     const clearCart = () => {
         dispatch({type:TYPES.CLEAR_CART})
     }
-    const pricesInCart = (id) => {
+    const sumtotalPrices = (id) => {
         dispatch({type:TYPES.TOTAL_AMOUNT, payload:id})
     }
    
@@ -49,7 +49,7 @@ const ShoppingCart = () => {
             <article className="itemInCart">
             <button onClick ={clearCart}>Limpiar Carrito</button>
             {
-                cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} />)
+                cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart}/>)
             }
             <h3>
                 
