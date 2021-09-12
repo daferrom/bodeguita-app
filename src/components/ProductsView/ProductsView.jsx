@@ -12,7 +12,10 @@ const ProductsView = () => {
                 Hola <ShowState /> elige uno de nuestros combos.
             </h1>
             <h3>Productos</h3>
+
             <ShoppingCart/>
+            
+            
             <article className="productsContainer"></article>
             
                         

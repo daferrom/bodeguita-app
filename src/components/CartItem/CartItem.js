@@ -2,22 +2,22 @@ import React from 'react'
 import './CartItem.css'
 
 const CartItem = ({data, delFromCart}) => {
-    let {id, name, price, imageUrl} = data;
+    let {id, name, price, imageUrl, quantity} = data;
 
     return (
         <div className= "cartItemContainer">
             <h4 className="titleItem" >{name}</h4>
             <div className= "imgAndPrice">
             <img 
-                className = "productImage"
+                className = "productCartImage"
                 src = {imageUrl}
                 alt="Imagen del producto"
             />
-            <h5 className="priceTitle">${price}.00</h5>
+            <h5 className="priceTitle">${price} x {quantity} Un. = ${price * quantity}</h5>
             </div>
             <div>
-            <button>Eliminar</button>    
-            <button>Eliminar</button>
+            <button onClick={()=> delFromCart(id)}>Eliminar uno</button>    
+            <button onClick={()=> delFromCart(id, true)}>Eliminar todos</button>
             </div>
         </div>
     )
