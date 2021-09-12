@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/bodeguita-app/static/css/main.622770db.chunk.css",
+    "main.js": "/bodeguita-app/static/js/main.4e54a2bf.chunk.js",
+    "main.js.map": "/bodeguita-app/static/js/main.4e54a2bf.chunk.js.map",
+    "runtime-main.js": "/bodeguita-app/static/js/runtime-main.c5c7842c.js",
+    "runtime-main.js.map": "/bodeguita-app/static/js/runtime-main.c5c7842c.js.map",
+    "static/js/2.f9db4b09.chunk.js": "/bodeguita-app/static/js/2.f9db4b09.chunk.js",
+    "static/js/2.f9db4b09.chunk.js.map": "/bodeguita-app/static/js/2.f9db4b09.chunk.js.map",
+    "index.html": "/bodeguita-app/index.html",
+    "static/css/main.622770db.chunk.css.map": "/bodeguita-app/static/css/main.622770db.chunk.css.map",
+    "static/js/2.f9db4b09.chunk.js.LICENSE.txt": "/bodeguita-app/static/js/2.f9db4b09.chunk.js.LICENSE.txt",
+    "static/media/LogoLaBodeguita.a0394bfa.png": "/bodeguita-app/static/media/LogoLaBodeguita.a0394bfa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5c7842c.js",
+    "static/js/2.f9db4b09.chunk.js",
+    "static/css/main.622770db.chunk.css",
+    "static/js/main.4e54a2bf.chunk.js"
+  ]
+}
