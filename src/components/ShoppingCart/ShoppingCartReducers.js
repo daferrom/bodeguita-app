@@ -8,6 +8,7 @@ export const shoppingInitialState = {
     products,
     cart:[],
 };
+
 // tasks of the cart //
 export function shoppingCartReducer(state,action){
     switch(action.type){

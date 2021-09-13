@@ -6,7 +6,7 @@ const ShowState = () => {
   return ( 
       <div>
          <p>Hola &nbsp;{state.name}&nbsp;</p>
-         <p>elige lo que necesites entre nuestros combos y lo enviaremos a tu 
+         <p>elige lo que necesites entre nuestros combos lo enviaremos a tu 
          direccion: {state.adress}
         </p> 
   </div>

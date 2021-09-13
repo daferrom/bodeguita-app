@@ -1,10 +1,8 @@
+import React from "react";
 
-import { createContext } from "react";
-
-const Context = createContext(
-    { name :'diego',
-    age: 33   
-}
-);
+const Context = React.createContext({
+    name: 'esto es sin provider',
+    suscribiteAlcanal: true
+})
 
 export default Context 

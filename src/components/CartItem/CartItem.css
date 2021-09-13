@@ -8,13 +8,15 @@ font-style: normal;
 font-weight: bold;
 font-size: 20px;
 line-height: 23px;
-color: var(--green-bodeguita)
+color: var(--green-bodeguita);
+margin-top: 20px;
+margin-bottom: 20px;
 }
 .cartItemContainer{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .productCartImage{
@@ -23,5 +25,52 @@ color: var(--green-bodeguita)
 }
 .imgAndPrice{
     display:flex;
+    flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    gap: 30px
+}
+.btnsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+.counterBtnsContainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 255, 209, 0.5);
+    border-radius: 30px;
+    
+}
+
+.btnDelFromCart{
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+.minusBtn{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+    border: none;
+    background-color: transparent;
+}
+.counter{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height:30px;
+    width:30px;
+    text-align: center;
 }

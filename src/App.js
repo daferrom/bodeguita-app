@@ -9,15 +9,14 @@ import ProductsView from './components/ProductsView/ProductsView';
 import Cart from './components/Cart/Cart'
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import './App.css'
-import { Context } from './context/context';
-import { shoppingInitialState } from './components/ShoppingCart/ShoppingCartReducers';
+import { products, cart } from './components/ShoppingCart/ShoppingCartReducers';
+import Context from './Context/Context';
 import MyProvider from './components/application/provider';
-
+import { state} from './components/ShoppingCart/ShoppingCart'
 
 function App() {
-  let dataContext ={
-    shoppingInitialState
-  }
+  const dataContext = {Context}
+
   return (
     <MyProvider>
     <Context.Provider value={dataContext}>

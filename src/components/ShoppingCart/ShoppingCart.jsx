@@ -11,8 +11,10 @@ import ShowState from '../showState/ShowState'
 
 const ShoppingCart = () => {
     const [state, dispatch] = useReducer(shoppingCartReducer, shoppingInitialState);
-    
+
     const { products, cart} = state
+    
+
     //the const addToCart save the function to add a product to the cart//
     const addToCart = (id) => {
         dispatch({type:TYPES.ADD_TO_CART, payload:id})
